@@ -13,7 +13,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@guildxyz/sdk": "latest",
-    "framer-motion": "^11.0.3",
+    "framer-motion": "^11.3.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
