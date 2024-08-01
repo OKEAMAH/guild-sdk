@@ -15,8 +15,8 @@
     "@guildxyz/sdk": "latest",
     "framer-motion": "^11.0.3",
     "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "swr": "^2.2.4",
     "viem": "^1.12.2",
     "wagmi": "^1.4.2"
