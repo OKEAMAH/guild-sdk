@@ -10,7 +10,7 @@
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
     <a href="https://github.com/guildxyz">Github</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-    <a href="https://discord.gg/guildxyz">Discord</a>
+    <a href="https://discord.gg/gu8qMJAp">Discord</a>
 </div>
   
   
@@ -525,7 +525,7 @@ Note that for example in Telegram's case `platformRoleId` is not required; only 
 
 #### `Example flow from Create Guild to Join`
 
-```typescript
+```ts
 import { createGuildClient, createSigner } from "@guildxyz/sdk";
 import { Wallet } from "ethers";
 import { randomBytes } from "crypto";

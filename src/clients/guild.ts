@@ -48,10 +48,12 @@ const guild = {
   getLeaderboard: (
     guildIdOrUrlName: number | string,
     guildPlatformId: number,
-    signer?: SignerFunction
+    signer?: SignerFunction,
+    isAllUser: boolean = false,
+    forceRecalculate: boolean = false
   ) =>
     callGuildAPI<GetLeaderboardResponse>({
-      url: `/guilds/${guildIdOrUrlName}/points/${guildPlatformId}/leaderboard`,
+      url: `/guilds/${guildIdOrUrlName}/points/${guildPlatformId}/leaderboard?isAllUser=${isAllUser}&forceRecalculate=${forceRecalculate}`,
       method: "GET",
       signer,
     }).then(
@@ -59,6 +61,7 @@ const guild = {
         <GetLeaderboardResponse>{
           aroundUser: result.aroundUser?.map(castDateInLeaderboardItem),
           leaderboard: result.leaderboard.map(castDateInLeaderboardItem),
+          isRevalidating: !!result.isRevalidating,
         }
     ),
 
